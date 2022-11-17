@@ -1,6 +1,8 @@
 # Neural-Networks-with-Tensorflow-and-keras - Learning through code in simple language
 
 #### This post is an attemp to explain the uses of Tenserflow for the creation of the ANN model along with some of the important compnent's explanations. 
+
+#### Prepared By Aashish karn
 ![image](https://user-images.githubusercontent.com/64850093/202383113-0fc6ecef-3be0-4ebb-840c-78492346be8d.png)
 
  https://rukshanpramoditha.medium.com/one-hidden-layer-shallow-neural-network-architecture-d45097f649e6
@@ -52,7 +54,43 @@ we'll study below three type of Activation function:
 * 2. SIGMOID
 * 3. Linear activation fucniton
 
-`sigmoid` activation function takes any real value as input and outputs values in the range of 0 to 1. 
+ 
+ #### But when to use which activation function ?
+`sigmoid` activation function takes any real value as input and outputs values in the range of 0 to 1. So, This is better to use when we are working with **binary classification problem**.
+
+Here is the mathematical expression and graph of sigmoid function. 
+![image](https://user-images.githubusercontent.com/64850093/202408899-bbeade6d-9159-4811-ae82-db77af60e9f9.png)
+
+ 
+ `Linear activation function` is used commonly when the work is being done on the linear regression or when your Y has both negative and positive values because this activation function gives positive and negative integer values.
+ 
+ 
+
+![image](https://user-images.githubusercontent.com/64850093/202415391-df176c43-a3e3-4bd2-992e-fae1b46360b2.png)
+
+ 
+ 
+ 
+ `RELU` gives only positive integer in output so if your Y is only positive value for example for prediction of price of house.
+  ![image](https://user-images.githubusercontent.com/64850093/202414628-0fb1de9b-5c13-4db0-9345-64a1c0bcfebd.png)
+ 
+ #### Basically one of the best choice for the hidden layer is RELU because it has less computational complexity where in sigmoid you have to go for exponential calculations then taking it's inverse. oh no! . 
+ 
+ If you have a binary classification probelm use below code.
+ 
+ ```
+ model = Sequential(
+      [               
+        Dense(25 , activation = 'RELU' , name = 'layer1'),
+        Dense(15 , activation = 'RELU' , name = 'layer2'),
+        Dense(1 , activation = 'sigmoid' , name = 'layer3')
+      ], name = "my_model" 
+) 
+ ```
+  
+
+
+ 
 
 
         
@@ -107,6 +145,7 @@ model.compile(
  
  There are Various function for calucation of the loss one is **BinaryCrossentropy(), MeanSquaredError()** and manymore. Best value of W and B are calculated which minimize loss.
 
+ # I will be updating it. All contributions are welcomed.
 
 
 
