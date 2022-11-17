@@ -9,7 +9,7 @@
 # Introduction
 
 * **Tensflow**  is a free open source software library for machine learning. It's mainly used for the high numerical computation. 
-TensorFlow enables the developers to create a sequrntil and graphical structire that describe how data flows in order and each nodes 
+TensorFlow enables the developers to create a sequential and graphical structure that describe how data flows in order and each nodes 
 in the graphs shows some mathematcal computation.
 and each connection or edge between nodes is a multidimensional data array, or tensor.**Keras** is a high-level neural network library that runs on top of TensorFlow. 
 Both provide high-level APIs used for easily building and training models,
@@ -28,7 +28,7 @@ but Keras is more user-friendly because it's built-in Python.
 
 #### First we initialize the model with proper parameters
 
-``` 
+```python
 model = Sequential(
       [               
         Dense(25 , activation = 'sigmoid' , name = 'layer1'),
@@ -83,7 +83,7 @@ Here is the mathematical expression and graph of sigmoid function.
  
  If you have a binary classification probelm use below code.
  
- ```
+ ```python
  model = Sequential(
       [               
         Dense(25 , activation = 'RELU' , name = 'layer1'),
@@ -112,7 +112,7 @@ Here is the mathematical expression and graph of sigmoid function.
 ## 2. Specifying the Loss and cost function
 
 
-``` 
+```python 
 model.compile(
     loss=tf.keras.losses.BinaryCrossentropy(),
    
@@ -126,7 +126,7 @@ model.compile(
  
  ## 3. Minimizing cost using any algorithm preferred is **Gradient Desent** and fitting accordingly.
  
- ```
+ ```python
  
  model.fit(
     X,y,
