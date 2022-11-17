@@ -140,6 +140,7 @@ model.compile(
  epoch  = 20 means 20 iterations are done.
  
  **Gradient Desent**: It is an iterative first order first order optimization algorithm to find local minima and maxima.
+ Below in the image we can clearly see that the value of W i,e weight and b bias is updated. (This is `learning` in machine learning. Beginner should know that updating W and B and finding a proper value of W and B is our aim). This derivaties are calculated using backpropagation which further enhances the value of W and B and takes us in the local minima as shown in the last picture.
  ![image](https://user-images.githubusercontent.com/64850093/202390052-01607ba3-d71d-4f61-a929-b7c40d9408a4.png)
 
  
