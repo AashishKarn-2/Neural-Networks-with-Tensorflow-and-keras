@@ -40,13 +40,18 @@ model = Sequential(
 
 Above In the figure at first we have imported all the libraries important. From the picture we can see for Building model for NN, there are three terms which is necessary to understand
 There is ***Sequence()*** and **Dense()** function.
+ ### 1.1 Working of `sequential() function.`
  
- * In **sequence()** we have defined three Dense function which builds upon the three layered neuron network.
+ * In **sequential()** we have defined three Dense function which builds upon the three layered neuron network. Each layer work in order it is defined inside the function.
  
- * Where first parameter of **Dense()** has **25** or **15**, this imply the number of the nurons in the each layer. second parameter defines which activation function
- we want to use there are various eg. Sigmoid , RElu. ** Later in the section we will discuss about the activations **
  
-### 1.1 Activations function and choosing the proper activation function.
+ 
+ ### 1.2 Working of `Dense() function`.
+ * Where first parameter of **Dense()** has **25** or **15**, this imply the number of the neurons in the each layer. Then the computation of input is done for the next layer involving `W` `X` and `b` for all neuron in one layer. Second parameter defines which activation function
+ we want to use there are various eg. Sigmoid , RElu. ** Later in the section we will discuss about the activations**
+ 
+ 
+### 1.3 Activations function and choosing the proper activation function.
 **Activation function** are the funcitons which determines if the neuron fires or not. The neuron only fires when an activation function pass a certain value. 
 we'll study below three type of Activation function:
 
