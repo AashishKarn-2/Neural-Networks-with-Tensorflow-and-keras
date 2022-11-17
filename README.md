@@ -1,4 +1,6 @@
 # Neural-Networks-with-Tensorflow-and-keras - Learning through code in simple language
+
+#### This post is an attemp to explain the uses of Tenserflow for the creation of the ANN model along with some of the important compnent's explanations. 
 ![image](https://user-images.githubusercontent.com/64850093/202383113-0fc6ecef-3be0-4ebb-840c-78492346be8d.png)
 
  https://rukshanpramoditha.medium.com/one-hidden-layer-shallow-neural-network-architecture-d45097f649e6
@@ -37,11 +39,33 @@ model = Sequential(
 Above In the figure at first we have imported all the libraries important. From the picture we can see for Building model for NN, there are three terms which is necessary to understand
 There is ***Sequence()*** and **Dense()** function.
  
- * In sequence() we have defined three Dense function which builds upon the three layered neuron network.
+ * In **sequence()** we have defined three Dense function which builds upon the three layered neuron network.
  
  * Where first parameter of **Dense()** has **25** or **15**, this imply the number of the nurons in the each layer. second parameter defines which activation function
  we want to use there are various eg. Sigmoid , RElu. ** Later in the section we will discuss about the activations **
  
+### 1.1 Activations function and choosing the proper activation function.
+**Activation function** are the funcitons which determines if the neuron fires or not. The neuron only fires when an activation function pass a certain value. 
+we'll study below three type of Activation function:
+
+* 1. RELU
+* 2. SIGMOID
+* 3. Linear activation fucniton
+
+`sigmoid` activation function takes any real value as input and outputs values in the range of 0 to 1. 
+
+
+        
+
+
+
+
+
+
+
+
+
+
 ## 2. Specifying the Loss and cost function
 
 
